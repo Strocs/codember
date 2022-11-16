@@ -4,7 +4,8 @@
   "description": "Solutions for the challenges from https://codember.dev/ by midudev",
   "type": "module",
   "scripts": {
-    "01": "node challenge01"
+    "01": "node challenge01",
+    "02": "node challenge02"
   },
   "author": "Ignacio Molina P.",
   "license": "MIT"

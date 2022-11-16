@@ -16,9 +16,16 @@ Cada semana iré sumando una nueva carpeta con la descripción del desafío, la 
 │  ├── challenge01.md
 │  ├── index.js
 │  └── users.txt
+├── challenge02
+│  ├── challenge02.md
+│  ├── index.js
+│  └── encrypted.txt
 ├── package.json
 └── README.md
 ```
 
- 
+|Challenge|  |
+|---------|--|
+| 🤖 01:|✅|
+| 🕵️ 02:|✅|
 
