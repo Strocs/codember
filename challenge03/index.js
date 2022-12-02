@@ -1,21 +1,30 @@
 import { readFileSync } from 'fs'
 
-// { 'red', 'blue', 'green', 'gray', 'pink' }
+const data = readFileSync('challenge03/colors.txt', 'utf-8')
+const colorsArray = JSON.parse(data)
 
-const colors = readFileSync('challenge03/colors.txt', 'utf-8')
+const longestColorsZebra = (colorsArray) => {
+  let longestZebra = 0;
+  let lastColor = '';
+  let zebraArray = [colorsArray[0]];
 
-const colorsToArray = colors
-  .slice(1, colors.length - 1)
-  .replaceAll('"', '')
-  .trim()
-  .split(',')
-  .map(color => color.trim())
+  const end = () =>
+  zebraArray.length >= longestZebra
+      ? [zebraArray.length, zebraArray.at(-1)]
+      : [longestZebra, lastColor];
 
+  for (let color of colorsArray) {
+    if (zebraArray.length === 1 && zebraArray[0] === color) continue
+    if (zebraArray.length < 2 || zebraArray.at(-2) === color) {
+      zebraArray.push(color)
+      continue
+    }
+    [longestZebra, lastColor] = end()
+    zebraArray = [zebraArray.at(-1), color]
+  }
+  
+  [longestZebra, lastColor] = end();
+  return [longestZebra, lastColor];
+};
 
-
-let zebraLength;
-let lastColor;
-const result = colorsToArray.reduce((acc, prev) => console.log(acc, prev))
-
-// console.log(colorsToArray)
-console.log(zebraLength + '@' + lastColor)
+console.log(longestColorsZebra(colorsArray))

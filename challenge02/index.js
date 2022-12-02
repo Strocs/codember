@@ -8,7 +8,7 @@ const wordsEncrypted = encrypted.split(' ')
                                 .map(word => {
                                   let wordArray = []
                                   for (let i = 0; i < word.length;) {
-                                    if (word[i] === '9') {
+                                    if (word[i] === '9' || word[i] === '8' || word[i] === '7' || word[i] === '6' || word[i] === '5' || word[i] === '4') {
                                       wordArray.push(word.slice(i, i + 2))
                                       i = i + 2
                                     } else {

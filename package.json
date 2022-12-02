@@ -6,7 +6,9 @@
   "scripts": {
     "01": "node challenge01",
     "02": "node challenge02",
-    "03": "node challenge03"
+    "03": "node challenge03",
+    "04": "node challenge04",
+    "05": "node challenge05"
   },
   "author": "Ignacio Molina P.",
   "license": "MIT"

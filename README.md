@@ -6,6 +6,15 @@
 Échale un vistazo! es una página creada por el gran [Midudev](https://twitter.com/midudev) ❤️
 
 &nbsp;
+
+|Challenges|[ -- ]|
+|---------|--|
+| 🤖 01:|[✔️]|
+| 🕵️ 02:|[✔️]|
+| 🦓 03:|[✔️]|
+| 🔑 04:|[✔️]|
+| 🔫 05:|[✔️]|
+
 # Estructura del repositorio 📏
 Cada semana iré sumando una nueva carpeta con la descripción del desafío, la información necesaria para resolverlo y el archivo con la solución.  
 
@@ -20,12 +29,16 @@ Cada semana iré sumando una nueva carpeta con la descripción del desafío, la 
 │  ├── challenge02.md
 │  ├── index.js
 │  └── encrypted.txt
+├── challenge03
+│  ├── challenge03.md
+│  └── color.txt
+│  ├── index.js
+├── challenge04
+│  ├── challenge04.md
+│  ├── index.js
+├── challenge05
+│  ├── challenge05.md
+│  ├── index.js
 ├── package.json
 └── README.md
 ```
-
-|Challenge|  |
-|---------|--|
-| 🤖 01:|✅|
-| 🕵️ 02:|✅|
-
